@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM php:7.3-apache
 
 # Nullmailer debconf selections
 RUN echo "nullmailer shared/mailname string localhost" | debconf-set-selections
@@ -9,12 +9,13 @@ RUN  apt-get update && \
   # Install dependencies
   git \
   imagemagick \
-  libxml2-dev \
   libfreetype6-dev \
   libicu-dev \
   libjpeg62-turbo-dev \
   libmcrypt-dev \
   libpng-dev \
+  libxml2-dev \
+  libzip-dev \
   locales \
   nullmailer \
   zlib1g-dev && \
@@ -33,12 +34,13 @@ RUN  apt-get update && \
   # clean up
   apt-get clean && \
   apt-get -y purge \
-  libxml2-dev \
-  libicu-dev \
   libfreetype6-dev \
+  libicu-dev \
   libjpeg62-turbo-dev \
   libmcrypt-dev \
   libpng12-dev \
+  libxml2-dev \
+  libzip-dev \
   zlib1g-dev && \
   rm -rf /var/lib/apt/lists/* /usr/src/*
 
