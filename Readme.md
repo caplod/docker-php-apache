@@ -10,7 +10,7 @@ To create your custom image based on this repository follow these steps:
     git clone https://github.com/caplod/docker-php-apache
     cd docker-php-apache
     sudo service docker start
-    sudo docker build . -t custom-php-apache:7.4
+    sudo docker build . -t custom-php-apache:8
     
 ## usage
 
@@ -28,7 +28,7 @@ Or in your `docker-compose.yaml` you can use this image as
       app:
         image: tan3/php-apache:latest
         # or your custom image with
-        # image: custom-php-apache:7.4
+        # image: custom-php-apache:8
 
 Then start with 
 
