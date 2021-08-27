@@ -1,5 +1,5 @@
 Docker image with Apache, PHP 7.4 with composer (preconfigured with imagemagick,
-apcu, intl, mysqli, soap, gd, zip and opcache) and nullmailer
+apcu, intl, mysqli, soap, gd, zip and opcache)
 
 Older PHP versions are available at https://github.com/caplod/docker-php-apache/branches
 
