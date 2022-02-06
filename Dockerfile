@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:8.1-apache
 
 RUN  apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get -yq --no-install-recommends install \
