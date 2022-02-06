@@ -1,4 +1,4 @@
-FROM php:8-apache
+FROM php:8.0-apache
 
 # Nullmailer debconf selections
 RUN echo "nullmailer shared/mailname string localhost" | debconf-set-selections
