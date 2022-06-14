@@ -41,3 +41,6 @@ RUN  apt-get update && \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 COPY config/php.ini /usr/local/etc/php/
+# php debugger
+# see https://kint-php.github.io
+COPY config/kint.phar /usr/local/lib/php/
