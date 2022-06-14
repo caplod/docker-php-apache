@@ -50,3 +50,6 @@ ENV NULLMAILER_PORT 1025
 
 COPY config/php.ini /usr/local/etc/php/
 COPY config/docker-php-entrypoint /usr/local/bin
+# php debugger
+# see https://kint-php.github.io
+COPY config/kint.phar /usr/local/lib/php/
